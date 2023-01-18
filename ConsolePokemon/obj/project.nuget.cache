@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tTWwS//h6iTIAfqInNntzDsRWWiW2idOCpqBrYwUoKOV8m3s1TQCY/jojFr+EG0pOiUOZUMvpiKylus5oH4QYQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vbmac\\OneDrive\\Área de Trabalho\\Estudos\\ConsolePokemon\\ConsolePokemon\\ConsolePokemon\\ConsolePokemon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vbmac\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

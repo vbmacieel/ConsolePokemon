@@ -1,0 +1,17 @@
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\bin\Debug\net6.0\ConsolePokemon.exe
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\bin\Debug\net6.0\ConsolePokemon.deps.json
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\bin\Debug\net6.0\ConsolePokemon.runtimeconfig.json
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\bin\Debug\net6.0\ConsolePokemon.dll
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\bin\Debug\net6.0\ConsolePokemon.pdb
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.csproj.AssemblyReference.cache
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.AssemblyInfoInputs.cache
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.AssemblyInfo.cs
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.csproj.CoreCompileInputs.cache
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.dll
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\refint\ConsolePokemon.dll
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.pdb
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.genruntimeconfig.cache
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ref\ConsolePokemon.dll
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\bin\Debug\net6.0\RestSharp.dll
+C:\Users\vbmac\OneDrive\Área de Trabalho\Estudos\ConsolePokemon\ConsolePokemon\ConsolePokemon\obj\Debug\net6.0\ConsolePokemon.csproj.CopyComplete
