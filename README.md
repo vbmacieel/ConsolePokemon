@@ -9,6 +9,6 @@ The technologies used in the project are:
 - [PokeApi](https://pokeapi.co/)
 
 ### Day 1 ✔️
-- [x] Make a GET request to the API;
+- [x] Make a GET request to the API using [RestSharp](https://restsharp.dev/);
 - [x] Get the response from the request;
 - [x] Show the result at the console;
