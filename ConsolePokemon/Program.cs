@@ -1,25 +1,28 @@
 ﻿using RestSharp;
+using System.Text.Json;
 
 namespace ConsolePokemon
 {
     public class Program
     {
-        private const string UrlPokeApi = "https://pokeapi.co/api/v2/pokemon";
-
         private static void Main(string[] args)
         {
-            PokeApiGet();
+            string pokemonName = "bulbasaur";
+            PokeApiGet(pokemonName);
         }
 
-        private static void PokeApiGet()
+        private static void PokeApiGet(string pokemonName)
         {
-            RestClient client = new RestClient(UrlPokeApi);
-            RestRequest request = new RestRequest("", Method.Get);
+            string urlPokeApi = $"https://pokeapi.co/api/v2/pokemon/{pokemonName}";
+            RestClient client = new RestClient();
+            RestRequest request = new RestRequest(urlPokeApi, Method.Get);
             RestResponse response = client.Execute(request);
 
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Console.WriteLine(response.Content);
+                string json = response.Content;
+                var pokemon = JsonSerializer.Deserialize<Pokemon>(json);
+                Console.WriteLine(pokemon.ToString());
             }
             else
             {
