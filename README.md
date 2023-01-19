@@ -12,3 +12,8 @@ The technologies used in the project are:
 - [x] Make a GET request to the API using [RestSharp](https://restsharp.dev/);
 - [x] Get the response from the request;
 - [x] Show the result at the console;
+
+### Day 2 ✔️
+- [x] Parsing the response from the api;
+- [x] Create classes to use as object to organize the result from the response;
+- [x] Show the result at the console now organized;
