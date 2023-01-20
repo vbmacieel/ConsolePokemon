@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsolePokemon
+namespace ConsolePokemon.Model
 {
     internal class Pokemon
     {

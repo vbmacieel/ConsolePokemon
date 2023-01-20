@@ -1,4 +1,4 @@
-﻿namespace ConsolePokemon
+﻿namespace ConsolePokemon.Model
 {
     public class Abilities
     {
