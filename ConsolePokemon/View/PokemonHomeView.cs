@@ -6,46 +6,49 @@ using System.Threading.Tasks;
 
 namespace ConsolePokemon.View
 {
-    public static class PokemonHomeView
+    public class PokemonHomeView
     {
+        public string UserName { get; set; }
 
-        public static void MainMenu()
+        public PokemonHomeView()
+        {
+            GreetingsMenu();
+        }
+
+        private void GreetingsMenu()
         {
             //Criar um nome top pro menu
             Console.WriteLine();
             Console.Write("Hello, what's your name? ");
-            string name = Console.ReadLine();
+            UserName = Console.ReadLine();
             Console.WriteLine();
+        }
 
+        public void MainMenu()
+        {
             Console.WriteLine("---------- MENU ----------");
-            Console.WriteLine($"{name} what do you want to do?");
+            Console.WriteLine($"{UserName} what do you want to do?");
             Console.WriteLine("1 - Adopt a mascot");
-            Console.WriteLine("2 - See your adopted mascots");
+            Console.WriteLine("2 - Details of a pokemon");
             Console.WriteLine("3 - Exit");
+        }
 
-            string answerString = Console.ReadLine();
-            try
-            {
-                int userAnswer = int.Parse(answerString);
-                switch (userAnswer)
-                {
-                    case 1:
-                        //Criar nova chamada a api para mostrar todos os pokemons
-                        break;
-                    case 2:
-                        PokemonService pokemonService = new PokemonService();
-                        pokemonService.PokeApiGet("bulbasaur");
-                        break;
-                    case 3:
-                        Console.WriteLine("Thank you for try this app :D");
-                        Environment.Exit(0);
-                        break;
-                }
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine($"Unable to format {answerString}");
-            }
+        public void AdoptionMenu()
+        {
+            Console.WriteLine("---------- ADOPT A MASCOT ----------");
+            Console.WriteLine($"{UserName} which pokemon do you want to adopt?");
+            Console.WriteLine("BULBASAUR");
+            Console.WriteLine("IVYSAUR");
+            Console.WriteLine("PIKACHU");
+        }
+
+        public string DetailsMenu()
+        {
+            Console.WriteLine("---------- DETAILS OF A POKEMON ----------");
+            Console.WriteLine($"{UserName} choose a pokemon to see his details");
+            Console.Write("Choose a pokemon name: ");
+            string pokemonName = Console.ReadLine();
+            return pokemonName;
         }
 
     }

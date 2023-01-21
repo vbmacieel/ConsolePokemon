@@ -7,7 +7,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace ConsolePokemon
+namespace ConsolePokemon.Service
 {
     internal class PokemonService
     {
@@ -23,6 +23,7 @@ namespace ConsolePokemon
                 string json = response.Content;
                 var pokemon = JsonSerializer.Deserialize<Pokemon>(json);
                 Console.WriteLine(pokemon.ToString());
+                Console.WriteLine();
             }
             else
             {
