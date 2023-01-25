@@ -7,16 +7,16 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace ConsolePokemon.Service
+namespace ConsolePokemon.Service.Impl
 {
-    internal class PokemonService
+    public class PokemonService : IPokemonService
     {
-        public void PokeApiGet(string pokemonName)
+        private string urlPokeApi = "https://pokeapi.co/api/v2/pokemon/";
+
+        public void GetPokemon(string pokemonName)
         {
-            string urlPokeApi = $"https://pokeapi.co/api/v2/pokemon/{pokemonName}";
-            RestClient client = new RestClient();
-            RestRequest request = new RestRequest(urlPokeApi, Method.Get);
-            RestResponse response = client.Execute(request);
+            string urlGetPokemon = urlPokeApi + pokemonName;
+            RestResponse response = GetResponse(urlGetPokemon);
 
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
@@ -29,6 +29,14 @@ namespace ConsolePokemon.Service
             {
                 Console.WriteLine(response.ErrorMessage);
             }
+        }
+
+        private RestResponse GetResponse(string url) 
+        {
+            RestClient client = new RestClient();
+            RestRequest request = new RestRequest(url, Method.Get);
+            return client.Execute(request);
+
         }
     }
 }

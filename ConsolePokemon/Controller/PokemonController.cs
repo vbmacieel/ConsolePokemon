@@ -1,4 +1,5 @@
-﻿using ConsolePokemon.Service;
+﻿using ConsolePokemon.Model;
+using ConsolePokemon.Service.Impl;
 using ConsolePokemon.View;
 using System;
 using System.Collections.Generic;
@@ -10,28 +11,37 @@ namespace ConsolePokemon.Controller
 {
     public class PokemonController
     {
-        public static void Play()
+        private PokemonHomeView pokemonHomeView;
+        private PokemonMascotView PokemonMascotView;
+        private List<Pokemon> pokemonList;
+
+        public PokemonController()
+        {
+            pokemonList= new List<Pokemon>(); 
+        }
+
+        public void Play()
         {
             string userOptions;
             int play = 1;
-            PokemonHomeView pokemonView = new PokemonHomeView();
+            pokemonHomeView = new PokemonHomeView();
 
             while (play == 1)
             {
-                pokemonView.MainMenu();
+                pokemonHomeView.MainMenu();
                 string optionSelected = Console.ReadLine();
 
                 switch (optionSelected)
                 {
                     case "1":
-                        pokemonView.AdoptionMenu();
+                        Adoption();
                         break;
                     case "2":
-                        string pokemonSelected = pokemonView.DetailsMenu();
+                        string pokemonSelected = pokemonHomeView.DetailsMenu();
                         PokemonService pokemonService = new PokemonService();
                         try
                         {
-                            pokemonService.PokeApiGet(pokemonSelected.ToLower());
+                            pokemonService.GetPokemon(pokemonSelected.ToLower());
                         }
                         catch (Exception)
                         {
@@ -47,6 +57,11 @@ namespace ConsolePokemon.Controller
                         break;
                 }
             }
+        }
+
+        private void Adoption()
+        {
+            pokemonHomeView.AdoptionMenu();
         }
     }
 }

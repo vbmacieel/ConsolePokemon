@@ -10,7 +10,8 @@ namespace ConsolePokemon
     {
         private static void Main(string[] args)
         {
-            PokemonController.Play();
+            PokemonController controller = new PokemonController();
+            controller.Play();
         }
     }
 }
