@@ -28,18 +28,18 @@ namespace ConsolePokemon.View
         {
             Console.WriteLine("---------- MENU ----------");
             Console.WriteLine($"{UserName} what do you want to do?");
-            Console.WriteLine("1 - Adopt a mascot");
-            Console.WriteLine("2 - Details of a pokemon");
-            Console.WriteLine("3 - Exit");
+            Console.WriteLine("1 - Take care of your mascots");
+            Console.WriteLine("2 - Adopt an mascot");
+            Console.WriteLine("3 - Details of a pokemon");
+            Console.WriteLine("4 - Exit");
         }
 
-        public void AdoptionMenu()
+        public string AdoptionMenu()
         {
             Console.WriteLine("---------- ADOPT A MASCOT ----------");
             Console.WriteLine($"{UserName} which pokemon do you want to adopt?");
-            Console.WriteLine("BULBASAUR");
-            Console.WriteLine("IVYSAUR");
-            Console.WriteLine("PIKACHU");
+            string pokemonName = Console.ReadLine();
+            return pokemonName;
         }
 
         public string DetailsMenu()

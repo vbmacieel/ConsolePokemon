@@ -13,6 +13,19 @@ namespace ConsolePokemon.Model
         public int weight { get; set; }
         public List<Abilities> abilities { get; set; }
 
+        public Pokemon(string name, int height, int weight, List<Abilities> abilities)
+        {
+            this.name = name;
+            this.height = height;
+            this.weight = weight;
+            this.abilities = abilities;
+        }
+
+        public Pokemon()
+        {
+
+        }
+
         public override string? ToString()
         {
             StringBuilder sb = new StringBuilder();

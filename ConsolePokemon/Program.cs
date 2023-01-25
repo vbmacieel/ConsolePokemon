@@ -11,7 +11,7 @@ namespace ConsolePokemon
         private static void Main(string[] args)
         {
             PokemonController controller = new PokemonController();
-            controller.Play();
+            controller.MainGame();
         }
     }
 }

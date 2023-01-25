@@ -13,22 +13,21 @@ namespace ConsolePokemon.Service.Impl
     {
         private string urlPokeApi = "https://pokeapi.co/api/v2/pokemon/";
 
-        public void GetPokemon(string pokemonName)
+        public Pokemon GetPokemon(string pokemonName)
         {
             string urlGetPokemon = urlPokeApi + pokemonName;
             RestResponse response = GetResponse(urlGetPokemon);
-
-            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            string json = response.Content;
+            try
             {
-                string json = response.Content;
-                var pokemon = JsonSerializer.Deserialize<Pokemon>(json);
-                Console.WriteLine(pokemon.ToString());
-                Console.WriteLine();
+                Pokemon pokemon = JsonSerializer.Deserialize<Pokemon>(json);
+                return pokemon;
             }
-            else
+            catch (Exception)
             {
-                Console.WriteLine(response.ErrorMessage);
+                Console.WriteLine("Can't get this pokemon!\n");
             }
+            return null;
         }
 
         private RestResponse GetResponse(string url) 

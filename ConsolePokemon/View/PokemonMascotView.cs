@@ -9,13 +9,26 @@ namespace ConsolePokemon.View
 {
     public class PokemonMascotView
     {
-        public void MainMenu()
+        public void MainMenu(string mascotName)
         {
             Console.WriteLine("---------- MENU ----------");
-            Console.WriteLine($"What do you want to do with your mascot?");
+            Console.WriteLine($"What do you want to do with {mascotName}?");
             Console.WriteLine("1 - Play");
             Console.WriteLine("2 - Feed");
-            Console.WriteLine("3 - See mascot status");
+            Console.WriteLine($"3 - See {mascotName} status");
+            Console.WriteLine("4 - Leave mascot menu");
+        }
+
+        public string SelectMascotToPlay(List<Mascot> mascots)
+        {
+            Console.WriteLine("---------- FIRST SELECT A MASCOT ----------");
+            Console.WriteLine("Select a mascot to interact with: ");
+            foreach (Mascot mascot in mascots)
+            {
+                Console.WriteLine(mascot.name);
+            }
+            string mascotName = Console.ReadLine();
+            return mascotName;
         }
 
         public void Play(string pokemonName)
@@ -32,7 +45,7 @@ namespace ConsolePokemon.View
         public void SeeStatus(Mascot mascot)
         {
             Console.WriteLine("---------- MASCOT STATUS ----------");
-            mascot.ToString();
+            Console.WriteLine(mascot.ToString());
         }
     }
 }
