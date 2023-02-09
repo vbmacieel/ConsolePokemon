@@ -5,7 +5,7 @@ The idea of the project is to create a game like tamagotchi using pokemons. Cons
 The technologies used in the project are:
 - C#
 - .NET
-- MVVM
+- MVC
 - [PokeApi](https://pokeapi.co/)
 
 ### Day 1 ✔️
